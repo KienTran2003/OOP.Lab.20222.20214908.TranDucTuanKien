@@ -6,18 +6,24 @@ public class Ex2_2_6_SolveEquation {
         System.out.println("Degree of equation (1/2): ");
         Scanner scanner = new Scanner(System.in);
         int intDegree = scanner.nextInt();
-        if (intDegree == 1){
+        if (intDegree == 1){                                                //Phương trình bậc 1 có 1 ẩn
             System.out.println("Number of variables: ");
             int intVar = scanner.nextInt();
             if (intVar == 1){
+                
+                //Nhập hệ số
                 System.out.println("Enter coefficient a = ");
                 a = scanner.nextDouble();
                 System.out.println("Enter coefficient b = ");
                 b = scanner.nextDouble();
+                
                 if (a==0 && b == 0) {System.out.println("This equation has infinite roots");}
                 else if (a == 0 && b != 0) {System.out.println("This system does not have any roots");}
                 else {System.out.println("This system has an unique root x = " + (-b/a));}
-            } else {
+            } 
+            else {                                                         //Hệ phương trình bậc 1 có 2 ẩn
+                
+                //Nhập hệ số
                 System.out.println("This system has form: ax1 + bx2 = c, dx1 + ex2 = f");
                 System.out.println("Enter coefficient a = ");
                 a = scanner.nextDouble();
@@ -31,10 +37,13 @@ public class Ex2_2_6_SolveEquation {
                 e = scanner.nextDouble();
                 System.out.println("Enter coefficient f = ");
                 f = scanner.nextDouble();
-
+                
+                //Tính định thức Crammer 
                 double dCrammer = a*e - b*d;
                 double dCrammerx = c*e-b*f;
                 double dCrammery = a*f - c*d;
+                
+                
                 if (dCrammer != 0){
                     System.out.println("x1 = " + dCrammerx/dCrammer);
                     System.out.println("x2 = " + dCrammery/dCrammer);
@@ -44,14 +53,20 @@ public class Ex2_2_6_SolveEquation {
                 } else {System.out.println("This system have infinite solutions.");}
             }
 
-        } else {
+        } else {                                                            //Phương trình bậc 2 có 1 ẩn
+            
+            //Nhập hệ số
             System.out.println("Enter coefficient a = ");
             a = scanner.nextDouble();
             System.out.println("Enter coefficient b = ");
             b = scanner.nextDouble();
             System.out.println("Enter coefficient c = ");
             c = scanner.nextDouble();
+            
+            //Tính denta
             double dDenta = b*b - 4*a*c;
+            
+            
             if (dDenta < 0){System.out.println("This equation does not have real root.");}
             else {
                 double tempt = Math.sqrt(dDenta);
