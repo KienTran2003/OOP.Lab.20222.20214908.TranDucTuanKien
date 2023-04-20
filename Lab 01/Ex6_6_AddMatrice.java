@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class AddMatrice {
+public class Ex6_6_AddMatrice {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter size of your matrix (mxn): ");

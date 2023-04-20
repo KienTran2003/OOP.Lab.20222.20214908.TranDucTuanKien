@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class SortArray {
+public class Ex6_5_SortArray {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 

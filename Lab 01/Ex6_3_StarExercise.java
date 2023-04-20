@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class StarExercise {
+public class Ex6_3_StarExercise {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter height of the triangle:");
