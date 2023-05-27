@@ -33,6 +33,10 @@ public class Cart {
     //         this.addDigitalVideoDisc(dvd);
     //     }
     // }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1,DigitalVideoDisc dvd2){
+        this.addDigitalVideoDisc(dvd1);
+        this.addDigitalVideoDisc(dvd2);
+    }
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
         DigitalVideoDisc[] temp = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
         
