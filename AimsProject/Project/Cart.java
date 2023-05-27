@@ -23,6 +23,16 @@ public class Cart {
         
 
     }
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList){
+        for (int i = 0; i<dvdList.length; i++){
+            this.addDigitalVideoDisc(dvdList[i]);
+        }
+    }
+    // public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
+    //     for (DigitalVideoDisc dvd : dvds) {
+    //         this.addDigitalVideoDisc(dvd);
+    //     }
+    // }
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
         DigitalVideoDisc[] temp = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
         
