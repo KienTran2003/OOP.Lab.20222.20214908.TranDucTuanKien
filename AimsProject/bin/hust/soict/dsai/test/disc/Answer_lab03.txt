@@ -1,0 +1,10 @@
+2.Working with method overloading
+2.1: I prefer method which signature is a array because when we use array we can control the length of it and run errors as soon as possible,
+
+-In swap method: o1 and o2 copy references from jungle nand cinderella, then they overwrite reference
+-In new swap method, after copy references, we change data in that reference which jungle and cinderella also refer to.
+
+3.Passing parameter
+Java always pass by value
+
+6.toString() method should return String type
