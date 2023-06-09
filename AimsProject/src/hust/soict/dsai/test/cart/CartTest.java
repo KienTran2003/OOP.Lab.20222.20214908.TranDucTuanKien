@@ -1,6 +1,6 @@
 package hust.soict.dsai.test.cart;
 import hust.soict.dsai.aims.cart.Cart;
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class CartTest {
 
@@ -24,9 +24,9 @@ public class CartTest {
 
 		
 		DigitalVideoDisc[] dvdList = {dvd1, dvd2, dvd3, dvd4, dvd5};
-		anOrder.addDigitalVideoDisc(dvdList);
+		anOrder.addMedia(dvd1);
 		
-		anOrder.print();
+		anOrder.display();
 		
 	}
 
