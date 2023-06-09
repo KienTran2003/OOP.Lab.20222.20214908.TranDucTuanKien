@@ -1,0 +1,10 @@
+9.Store and Cart are aggregate from Media
+10. If the passing object is not an instance of Media then that function returns false.
+11.The screen prints different line becuase we use polymorphism method.
+First this method upcast the DVD,CD, BOOK to Media implicitly, then the list add them.
+When we call method toString(), each type (DVD,CD,BOOK) use that corresponding method because it overrides this method from parent class.
+
+12. we should use Comparable interface in class that has unique ordering. The subclass should implement Comparable interface because it is convenient to compare object within a class
+-In those class we have to implement them as Comparable interface then override method compareTo()
+-We can not have two ordering rules of the items, because Comparable only permit natural ordering. We can not override method compareTo() more than once.
+-In DVDs class, first we should check class of that media. If it is DVD, first order by title, then length and cost.
