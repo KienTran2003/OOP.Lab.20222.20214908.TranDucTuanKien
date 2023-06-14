@@ -60,6 +60,7 @@ public class Aims {
 				break;
 			case 0:
 				System.out.println("You are exitted.");
+				System.exit(0);
 				break;
 		}
 		
@@ -106,7 +107,7 @@ public class Aims {
 				showMenu();
 				break;
 		}
-		storeMenu();
+		
 	}
 		//Option 1.1
 		private static void seeMediaDetail(){
